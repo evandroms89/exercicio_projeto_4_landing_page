@@ -115,6 +115,10 @@
             &:hover {
                 color: variaveis.$corAzulEscuro;
                 transition: color .3s ease;
+
+                @media (max-width: 1280px) {
+                    color: variaveis.$corAzul;
+                }
             }
             
             &--is-active {
