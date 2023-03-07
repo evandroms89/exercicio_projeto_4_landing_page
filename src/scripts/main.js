@@ -6,13 +6,13 @@ const botaoSinopse = document.querySelector('[data-tab-button="sinopse"]')
 const botaoElenco = document.querySelector('[data-tab-button="elenco"]')
 const botaoTrilha = document.querySelector('[data-tab-button="trilha"]')
 
-const filmeSection = document.querySelector('.filme');
-const alturaFilme = filmeSection.offsetTop;
-const sinopseSection = document.querySelector('.sinopse');
+const filmeSection = document.querySelector('#filme');
+const alturaFilme = filmeSection.offsetTop - 90;
+const sinopseSection = document.querySelector('#sinopse');
 const alturaSinopse = sinopseSection.offsetTop - 90;
-const elencoSection = document.querySelector('.elenco');
-const alturaElenco = elencoSection.offsetTop - 105;
-const trilhaSection = document.querySelector('.trilha');
+const elencoSection = document.querySelector('#elenco');
+const alturaElenco = elencoSection.offsetTop - 90;
+const trilhaSection = document.querySelector('#trilha');
 const alturaTrilha = trilhaSection.offsetTop - 90;
 
 
