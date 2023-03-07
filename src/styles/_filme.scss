@@ -1,0 +1,108 @@
+@use 'variaveis';
+
+.filme {
+    background-color: variaveis.$corAzulEscuro;
+
+    &__container {
+        position: relative;
+        
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        &__conteudo-2 {
+            text-align: right;
+            
+            img {
+                border-left: 24px solid variaveis.$corAzulMuitoEscuro;
+            }
+
+            @media (max-width: 768px) {
+                text-align: left;
+                display: block;
+
+                img {
+                    width: 100%;
+                    border-left: none;
+                }
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                text-align: left;
+                display: block;
+
+                img {
+                    width: 100%;
+                    border-left: none;
+                }
+            }
+
+            @media (min-width: 1025px) and (max-width: 1280px) {
+                text-align: left;
+                display: block;
+
+                img {
+                    width: 100%;
+                    border-left: none;
+                }
+            }
+        }
+
+        &__conteudo-1 {
+            position: absolute;
+            top: 80px;
+            left: 60px;
+            width: 800px;
+            color: variaveis.$corBege;
+            background-color: variaveis.$corAzulMuitoEscuro;
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-top: 40px;
+            padding-bottom: 70px;
+
+            h2 {
+                margin: 0 auto;
+                padding: 16px;
+                width: 150px;
+                background-color: variaveis.$corBege;
+                color: variaveis.$corAzulMuitoEscuro;
+                text-align: center;
+            }
+
+            p {
+                padding-top: 32px;
+            }
+
+            @media (max-width: 768px) {
+                position: relative;
+                width: 100%;
+                left: 0;
+                top: 0;
+                padding-left: 32px;
+                padding-right: 32px;
+                margin-top: -4px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                position: relative;
+                width: 100%;
+                left: 0;
+                top: 0;
+                padding-left: 44px;
+                padding-right: 44px;
+                margin-top: -4px;
+            }
+
+            @media (min-width: 1025px) and (max-width: 1280px) {
+                top: 50px;
+                width: 700px;
+            }
+        }
+    }
+}

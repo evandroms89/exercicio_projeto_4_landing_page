@@ -1,0 +1,93 @@
+@use 'variaveis';
+
+.trilha {
+    background-color: variaveis.$corAzulClaro;
+
+    &__container {
+        position: relative;
+
+        &__conteudo-1 {
+
+            img {
+                width: 1280px;
+                border-top: 24px solid variaveis.$corAzulMuitoEscuro;
+                border-right: 24px solid variaveis.$corAzulMuitoEscuro;
+                border-bottom: 24px solid variaveis.$corAzulMuitoEscuro;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    border: none;
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    width: 100%;
+                    border: none;
+                }
+
+                @media (min-width: 1025px) and (max-width: 1280px) {
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
+
+        &__conteudo-2 {
+            position: absolute;
+            top: 230px;
+            right: 80px;
+            width: 450px;
+            color: variaveis.$corBege;
+            background-color: variaveis.$corAzulMuitoEscuro;
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-top: 40px;
+            padding-bottom: 70px;
+
+            @media (max-width: 768px) {
+                position: relative;
+                width: 100%;
+                top: 0;
+                right: 0;
+                padding-left: 32px;
+                padding-right: 32px;
+                margin-top: -5px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                position: relative;
+                width: 100%;
+                top: 0;
+                right: 0;
+                padding-left: 44px;
+                padding-right: 44px;
+                margin-top: -5px;
+            }
+
+            @media (min-width: 1025px) and (max-width: 1280px) {
+                top: 140px;
+                width: 380px;
+            }
+
+            h2 {
+                margin: 0 auto;
+                padding: 16px;
+                width: 300px;
+                text-align: center;
+                background-color: variaveis.$corBege;
+                color: variaveis.$corAzulMuitoEscuro;
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    margin-top: 16px;
+                }
+
+                @media (min-width: 1025px) and (max-width: 1280px) {
+                    width: 240px;
+                }
+            }
+
+            p {
+                padding-top: 32px;
+            }
+        }
+    }
+}

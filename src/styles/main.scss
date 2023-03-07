@@ -1,5 +1,29 @@
-$bgColor: red;
+@use 'variaveis';
+@use 'header';
+@use 'filme';
+@use 'sinopse';
+@use 'elenco';
+@use 'trilha';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corClara;
+    font-family: Roboto, sans-serif;
+}
+
+.title {
+    font-size: 32px;
+    padding-bottom: 8px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
 }

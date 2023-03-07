@@ -1,0 +1,151 @@
+@use 'variaveis';
+
+.elenco {
+    background-color: variaveis.$corVerde;
+    border-top: 24px solid variaveis.$corBege;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: -4px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 100%;
+        margin-top: -4px;
+    }
+
+    &__container {
+        
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 48px;
+        padding-bottom: 88px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            width: 100%;
+            text-align: center;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        @media (min-width: 1025px) and (max-width: 1280px) {
+            max-width: 1100px;
+        }
+        
+        h2 {
+            text-align: center;
+            padding: 16px;
+            margin-bottom: 32px;
+            width: 150px;
+            background-color: variaveis.$corBege;
+            color: variaveis.$corAzulEscuro;
+
+            @media (max-width: 768px) {
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 32px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 32px;
+            }
+        }
+
+        &__atores {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+
+            @media (max-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            &__card {
+                transition: transform .4s ease;
+
+                img {
+                    width: 180px;
+
+                    @media (max-width: 768px) {
+                        width: 260px;
+                    }
+
+                    @media (min-width: 769px) and (max-width: 1024px) {
+                        width: 200px;
+                    }
+
+                    @media (min-width: 1025px) and (max-width: 1280px) {
+                        width: 160px;
+                    }
+                }
+
+                &__descricao {
+                    background-color: variaveis.$corClara;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 8px;
+                    margin-top: -5px;
+
+                    @media (max-width: 768px) {
+                        width: 260px;
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-top: -5px;
+                        margin-bottom: 32px;
+                    }
+
+                    @media (min-width: 769px) and (max-width: 1024px) {
+                        width: 200px;
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-top: -5px;
+                        margin-bottom: 32px;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        color: variaveis.$corAzul;
+
+                        @media (min-width: 1025px) and (max-width: 1280px) {
+                            font-size: 18px;
+                        }
+                    }
+                    
+                    h4 {
+                        color: variaveis.$corAzulEscuro;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: italic;
+
+                        @media (min-width: 1025px) and (max-width: 1280px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    transform: translateY(-8px);
+                    transition: transform .4s ease;
+                    cursor: pointer;
+                }
+            }
+        }
+   
+        
+    }
+}

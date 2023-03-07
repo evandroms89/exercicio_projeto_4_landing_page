@@ -1,0 +1,122 @@
+@use 'variaveis';
+
+.sinopse {
+    margin-top: -4px;
+    background-color: variaveis.$corClara;
+    border-top: 24px solid variaveis.$corBege;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    &__container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            grid-template-columns: 1fr;
+            padding-top: 0;
+            padding-bottom: 0;
+            gap: 0;
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            width: 100%;
+            grid-template-columns: 1fr;
+            padding-top: 0;
+            padding-bottom: 0;
+            gap: 0;
+        }
+        
+        &__conteudo-1 {
+
+            img {
+                height: 800px;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: auto;
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        &__conteudo-2 {
+
+            @media (max-width: 768px) {
+                margin-top: -4px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                margin-top: -4px;
+            }
+
+            img {
+                padding-top: 24px;
+                height: 400px;
+
+                @media (max-width: 768px) {
+                    padding-top: 0;
+                    width: 100%;
+                    height: auto;
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    padding-top: 0;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            h2 {
+                padding: 16px;
+                width: 180px;
+                text-align: center;
+                background-color: variaveis.$corAzulMuitoEscuro;
+                color: variaveis.$corBege;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    width: 100%;
+                }
+            }
+
+            p {
+                background-color: variaveis.$corVerde;
+                padding: 32px;
+                margin-top: 8px;
+
+                @media (max-width: 768px) {
+                    margin-top: 0;
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    margin-top: 0;
+                    padding-left: 44px;
+                    padding-right: 44px;
+                }
+            }
+        }
+    }
+}

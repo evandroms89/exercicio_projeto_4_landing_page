@@ -5,9 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Into the Wild</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <h1>Olá</h1>
+    <header class="header">
+        <div class="header__container">
+            <h1><img src="./dist/images/logo2.png" alt="Logo Into The Wild"></h1>
+            <nav>
+                <ul class="header__menu">
+                    <li>
+                        <a data-tab-button="o_filme" class="header__menu__item header__menu__item--is-active" href="#filme">O filme</a>
+                    </li>
+                    <li>
+                        <a data-tab-button="sinopse" class="header__menu__item" href="#sinopse">Sinopse</a>
+                    </li>
+                    <li>
+                        <a data-tab-button="elenco" class="header__menu__item" href="#elenco">Elenco</a>
+                    </li>
+                    <li>
+                        <a data-tab-button="trilha" class="header__menu__item" href="#trilha">Trilha Sonora</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="filme" id="filme">
+        <div class="filme__container">
+            <div class="filme__container__conteudo-2">
+                <img src="./dist/images/2.jpg" alt="">
+            </div>
+            <div class="filme__container__conteudo-1">
+                <h2 class="title">
+                    O filme
+                </h2>
+                <p class="text">
+                    Into the Wild (Na Natureza Selvagem) é um filme estadunidense de 2007, do gênero aventura dramático-biográfica, escrito e dirigido por Sean Penn, com roteiro baseado no livro homônimo de Jon Krakauer.
+                    
+                    Conta a história real das viagens de Christopher McCandless através da América do Norte e sua vida passada no deserto do Alasca no início da década de 1990. O filme é estrelado por Emile Hirsch, como McCandless, e Marcia Gay Harden e William Hurt como seus pais, além de Catherine Keener, Vince Vaughn, Kristen Stewart e Hal Holbrook.
+                    
+                    O filme estreou durante o Festival de Roma 2007 e em 21 de setembro de 2007 em Fairbanks, Alaska, e mais tarde seria nomeado para dois Globo de Ouro, vencendo o prêmio de melhor canção original ("Guaranteed", de Eddie Vedder). Também foi indicado a dois Oscars, o de melhor ator coadjuvante para Holbrook.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sinopse" id="sinopse">
+        <div class="sinopse__container">
+            <div class="sinopse__container__conteudo-1">
+                <img src="./dist/images/1.jpg" alt="">
+            </div>
+            <div class="sinopse__container__conteudo-2">
+                <h2 class="title">
+                    Sinopse
+                </h2>
+                <p class="text">
+                    Apesar de recém-formado e com futuro promissor, Christopher McCandless, de 22 anos, abre mão de sua vida privilegiada e sai em busca de aventuras, transformando-se num símbolo de resistência e da luta para manter o precário equilíbrio entre o homem e a Natureza.
+                </p>
+                <img src="./dist/images/10.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="elenco" id="elenco">
+        <div class="elenco__container">
+            <h2 class="title">
+                Elenco
+            </h2>
+            <ul class="elenco__container__atores">
+                <li class="elenco__container__atores__card">
+                    <img src="./dist/images/card1.jpg" >
+                    <div class="elenco__container__atores__card__descricao">
+                        <h3>Emile Hirsch</h3>
+                        <h4>Chris McCandless</h4>
+                    </div>
+                </li>
+                <li class="elenco__container__atores__card">
+                    <img src="./dist/images/card2.jpg" >
+                    <div class="elenco__container__atores__card__descricao">
+                        <h3>Kristen Stewart</h3>
+                        <h4>Tracy Tatro</h4>
+                    </div>
+                </li>
+                <li class="elenco__container__atores__card">
+                    <img src="./dist/images/card3.jpg" >
+                    <div class="elenco__container__atores__card__descricao">
+                        <h3>Vince Vaughn</h3>
+                        <h4>Wayne Westerberg</h4>
+                    </div>
+                </li>
+                <li class="elenco__container__atores__card">
+                    <img src="./dist/images/card4.jpg" >
+                    <div class="elenco__container__atores__card__descricao">
+                        <h3>Brian H. Dierker</h3>
+                        <h4>Rainey</h4>
+                    </div>
+                </li>
+                <li class="elenco__container__atores__card">
+                    <img src="./dist/images/card5.jpg" >
+                    <div class="elenco__container__atores__card__descricao">
+                        <h3>Catherine Keener</h3>
+                        <h4>Jan Burres</h4>
+                    </div>
+                </li>
+                <li class="elenco__container__atores__card">
+                    <img src="./dist/images/card6.jpg" >
+                    <div class="elenco__container__atores__card__descricao">
+                        <h3>Hal Holbrook</h3>
+                        <h4>Ron Franz</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="trilha" id="trilha">
+        <div class="trilha__container">
+            <div class="trilha__container__conteudo-1">
+                <img src="./dist/images/eddie.jpg" >
+            </div>
+            <div class="trilha__container__conteudo-2">
+                <h2 class="title">
+                    Trilha Sonora
+                </h2>
+                <p class="text">
+                    A trilha sonora do filme ficou a cargo de Michael Brook, Kaki King, e Eddie Vedder (vocalista do Pearl Jam). Esse trabalho de Eddie Vedder foi seu primeiro álbum solo e obteve nomeação para vários prêmios nas categorias de melhor canção e melhor banda sonora. Eddie Vedder aceitou o convite de Sean Penn, para fazer a trilha sonora, antes de saber qualquer coisa sobre o longa.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        ® 2023 - Into The Wild
+    </footer>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
